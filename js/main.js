@@ -53,17 +53,16 @@ $(function() {
       }
     },
     navText: [
-      "<div class='left-arrow'>" +
-        "<span class='top-head-arrow'></span>" +
-        "<span class='down-head-arrow'></span>" +
-        "</div>",
+      "<div class='left-arrow'></div>",
 
-      "<div class='right-arrow'>" +
-        "<span class='top-head-arrow'></span>" +
-        "<span class='down-head-arrow'></span>" +
-        "</div>"
+      "<div class='right-arrow'></div>"
     ]
   });
+
+  $(".owl-prev").on("click", function() {
+    $(this).toggleClass("animation-arrow");
+  });
+
   // latest slider
   $(".latest-slider").owlCarousel({
     loop: true,
@@ -87,15 +86,8 @@ $(function() {
       }
     },
     navText: [
-      "<div class='left-arrow'>" +
-        "<span class='top-head-arrow'></span>" +
-        "<span class='down-head-arrow'></span>" +
-        "</div>",
-
-      "<div class='right-arrow'>" +
-        "<span class='top-head-arrow'></span>" +
-        "<span class='down-head-arrow'></span>" +
-        "</div>"
+      "<div class='left-arrow'></div>",
+      "<div class='right-arrow'></div>"
     ]
   });
 
@@ -105,13 +97,3 @@ $(function() {
     $(this).toggleClass("transformed");
   });
 });
-
-// $(function() {
-//   $(".marquee").marquee({
-//     duration: 5000,
-//     duplicated: true,
-//     gap: 00,
-//     direction: "left",
-//     pauseOnHover: true
-// //   });
-// });

@@ -1231,7 +1231,7 @@ body.overlay:after {
   content: "\f00c";
   color: #2e74ea;
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   background-color: #d0ddf2;
   border-radius: 50%;
   width: 22px;

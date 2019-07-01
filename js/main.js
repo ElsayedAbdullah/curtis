@@ -18,7 +18,7 @@ $(function() {
     //   .fadeOut(400)
     //   .fadeIn(1000);
     $(".insights-img img").hide();
-    $($(this).data("content")).slideDown();
+    $($(this).data("content")).fadeIn();
   });
 
   $(".accordion ul li").on("click", function() {
@@ -91,7 +91,7 @@ $(function() {
     ]
   });
 
-  $(".navbar .navbar-toggler").click(function() {
+  $(".navbar .navbar-toggler").on("click", function() {
     $(".navbar").toggleClass("navbar-show-mobile");
     $("html,body").toggleClass("overlay");
     $(this).toggleClass("transformed");

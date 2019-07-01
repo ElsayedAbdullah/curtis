@@ -897,7 +897,7 @@ body.overlay:after {
 .experience .experience-content ul li:before {
   content: "\f00c";
   color: #ffad2c;
-  font-family: "fontAwesome";
+  font-family: "Font Awesome 5 Free";
   background-color: #faf1dc;
   border-radius: 50%;
   width: 22px;
@@ -1067,7 +1067,7 @@ body.overlay:after {
 .deliver .deliver-content ul li:before {
   content: "\f00c";
   color: #06d6a0;
-  font-family: fontawesome;
+  font-family: "Font Awesome 5 Free";
   background-color: #d2f7ed;
   border-radius: 50%;
   width: 22px;
@@ -1230,7 +1230,7 @@ body.overlay:after {
 .insights .insights-content ul li:before {
   content: "\f00c";
   color: #2e74ea;
-  font-family: fontawesome;
+  font-family: "Font Awesome 5 Free";
   background-color: #d0ddf2;
   border-radius: 50%;
   width: 22px;

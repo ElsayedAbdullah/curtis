@@ -43,10 +43,6 @@ body.overlay:after {
           box-shadow: none;
 }
 
-.navbar.navbar-show-mobile {
-  background-color: #fff;
-}
-
 :focus {
   outline: none;
 }
@@ -73,9 +69,14 @@ body.overlay:after {
   transition: opacity 0.4s ease-in-out;
 }
 
+.navbar-show-mobile {
+  background-color: #fff !important;
+}
+
 .navbar {
   padding: 27px 20px;
   position: relative;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 @media (max-width: 575px) {
@@ -1322,8 +1323,15 @@ body.overlay:after {
 
 .working-with-us {
   overflow: hidden;
-  max-width: 1740px;
+  max-width: 1910px;
   margin: auto;
+}
+
+@media (max-width: 575px) {
+  .working-with-us {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .working-with-us .working-with-us-title {
@@ -1373,7 +1381,7 @@ body.overlay:after {
 .working-with-us .row-1 > div,
 .working-with-us .row-2 > div,
 .working-with-us .row-3 > div {
-  width: 399px;
+  width: 100%;
   height: 115px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1383,7 +1391,7 @@ body.overlay:after {
   .working-with-us .row-1 > div,
   .working-with-us .row-2 > div,
   .working-with-us .row-3 > div {
-    width: 310px;
+    width: 100%;
   }
 }
 
@@ -1426,8 +1434,8 @@ body.overlay:after {
 
 .working-with-us .arrow {
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  bottom: 20px;
+  right: 30px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -1454,6 +1462,7 @@ body.overlay:after {
 .working-with-us .row-2 .one img,
 .working-with-us .row-3 .one img {
   width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 575px) {
@@ -1491,7 +1500,7 @@ body.overlay:after {
 .working-with-us .row-2 .three:hover .arrow,
 .working-with-us .row-3 .two:hover .arrow,
 .working-with-us .row-3 .three:hover .arrow {
-  right: 10px;
+  right: 20px;
 }
 
 @media (max-width: 575px) {
@@ -1527,14 +1536,18 @@ body.overlay:after {
 }
 
 .working-with-us .row-1 {
-  -ms-grid-columns: (399px)[4];
-      grid-template-columns: repeat(4, 399px);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.working-with-us .row-1 .four img {
+  height: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .working-with-us .row-1 {
-    -ms-grid-columns: 140px 310px 310px 140px;
-        grid-template-columns: 140px 310px 310px 140px;
+    -ms-grid-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   }
   .working-with-us .row-1 .one {
     position: relative;
@@ -1555,15 +1568,15 @@ body.overlay:after {
 }
 
 .working-with-us .row-2 {
-  -ms-grid-columns: 200px 399px 399px 399px 200px;
-      grid-template-columns: 200px 399px 399px 399px 200px;
+  -ms-grid-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
   padding-top: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .working-with-us .row-2 {
-    -ms-grid-columns: 310px 310px 310px;
-        grid-template-columns: 310px 310px 310px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     padding-top: 40px;
   }
   .working-with-us .row-2 .one {
@@ -1572,7 +1585,7 @@ body.overlay:after {
 }
 
 .working-with-us .row-2 > div {
-  max-width: 399px;
+  max-width: 100%;
   max-height: 115px;
 }
 
@@ -1591,7 +1604,7 @@ body.overlay:after {
 }
 
 .working-with-us .row-2 .four:hover .arrow {
-  right: 10px;
+  right: 20px;
 }
 
 @media (max-width: 575px) {
@@ -1607,7 +1620,7 @@ body.overlay:after {
 
 .working-with-us .row-2 .one img {
   position: absolute;
-  left: -173px;
+  left: -148px;
   width: auto;
 }
 
@@ -1642,7 +1655,7 @@ body.overlay:after {
 
 .working-with-us .row-2 .five img {
   position: absolute;
-  right: -100px;
+  right: -190px;
 }
 
 @media (max-width: 575px) {
@@ -1658,15 +1671,15 @@ body.overlay:after {
 }
 
 .working-with-us .row-3 {
-  -ms-grid-columns: (399px)[4];
-      grid-template-columns: repeat(4, 399px);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   padding-top: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .working-with-us .row-3 {
-    -ms-grid-columns: 140px 310px 310px 140px;
-        grid-template-columns: 140px 310px 310px 140px;
+    -ms-grid-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     padding-top: 40px;
   }
   .working-with-us .row-3 .one {
@@ -1711,7 +1724,7 @@ body.overlay:after {
   .working-with-us .row-1 > div,
   .working-with-us .row-2 > div,
   .working-with-us .row-3 > div {
-    width: 335px;
+    width: 100%;
     height: 70px;
   }
   .working-with-us .item-icon {
@@ -3670,5 +3683,36 @@ footer .contact a {
 
 footer .contact a:hover {
   color: #d1653a;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 /*# sourceMappingURL=style.css.map */

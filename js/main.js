@@ -91,9 +91,14 @@ $(function() {
     ]
   });
 
-  $(".navbar .navbar-toggler").on("click", function() {
-    $(".navbar").toggleClass("navbar-show-mobile");
-    $("html,body").toggleClass("overlay");
-    $(this).toggleClass("transformed");
+  $(".navbar .navbar-toggler").click(function(event) {
+    if (!event.detail || event.detail == 1) {
+      //activate on first click only to avoid hiding again on double clicks
+      $(this).toggleClass("transformed");
+      $(".navbar").toggleClass("navbar-show-mobile");
+      $("body, html").toggleClass("overlay");
+      $(".navbar-collapse").toggleClass("show");
+    }
+    return false;
   });
 });

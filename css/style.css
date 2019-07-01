@@ -897,7 +897,7 @@ body.overlay:after {
 .experience .experience-content ul li:before {
   content: "\f00c";
   color: #ffad2c;
-  font-family: fontawesome;
+  font-family: "fontAwesome";
   background-color: #faf1dc;
   border-radius: 50%;
   width: 22px;

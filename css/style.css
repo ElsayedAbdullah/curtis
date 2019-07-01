@@ -898,6 +898,11 @@ body.overlay:after {
   content: "\f00c";
   color: #ffad2c;
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   background-color: #faf1dc;
   border-radius: 50%;
   width: 22px;
@@ -1068,6 +1073,11 @@ body.overlay:after {
   content: "\f00c";
   color: #06d6a0;
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   background-color: #d2f7ed;
   border-radius: 50%;
   width: 22px;
@@ -1232,6 +1242,10 @@ body.overlay:after {
   color: #2e74ea;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   background-color: #d0ddf2;
   border-radius: 50%;
   width: 22px;

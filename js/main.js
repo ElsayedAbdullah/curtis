@@ -101,4 +101,21 @@ $(function() {
     }
     return false;
   });
+
+  // $("body.overlay").on("click", function(event) {
+  //   $("html,body").toggleClass("overlay");
+  //   $(".navbar-collapse").toggleClass("show");
+  // });
+
+  $("body").on("click", function(e) {
+    var $currEl = $(e.currentTarget);
+    if (!$currEl.is(".navbar") && !$currEl.closest(".navbar").length) {
+      $("html,body").removeClass("overlay");
+      $(".navbar-collapse").removeClass("show");
+      $(".navbar").removeClass("navbar-show-mobile");
+    }
+  });
+  $(".navbar").on("click", function(e) {
+    e.stopPropagation();
+  });
 });
